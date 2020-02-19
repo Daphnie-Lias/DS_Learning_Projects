@@ -1,5 +1,6 @@
 # Titanic Data set - understand usage of Exploratory Data analysis
 
+Explore the given data set and perform data pre-processing steps.
 
 Libraries Used:
 
