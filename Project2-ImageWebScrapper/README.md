@@ -1,8 +1,7 @@
-# Titanic Data set - understand usage of Exploratory Data analysis
+# Image Web Scraping using search keywords
 
 
-Libraries Used:
-
-Pandas - Read data set , pre-processing library
-Numpy - Efficient to work with arrays
-Seaborn - Visaulize data with statistical functions 
+This project has 3 layer; 
+scrap_app.py- Describes the application layer
+BusinessLayerUtil.py - Business layer containing the application logic (downloadImages) to download the images, calls Data layer
+ImageWebScrapper.py -  Data layer ; used Beautiful soup for Web scraping
