@@ -1,0 +1,138 @@
+Command Line Arguments:
+    dir = uploaded_images/ 
+    arch = vgg 
+    dogfile = dognames.txt
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+Filename= Frog_01.jpg    Pet Label= frog
+Filename= Frog_01.jpg    Pet Label= frog
+Filename= Dog_01.jpg    Pet Label= dog
+Filename= Frog_01.jpg    Pet Label= frog
+Filename= Dog_01.jpg    Pet Label= dog
+Filename= Dog_02.jpg    Pet Label= dog
+Filename= Frog_01.jpg    Pet Label= frog
+Filename= Dog_01.jpg    Pet Label= dog
+Filename= Dog_02.jpg    Pet Label= dog
+Filename= Coffee_mug_01.jpg    Pet Label= coffee mug
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                    Frog_01.jpg  label:                       frog
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:              Coffee_mug_01.jpg  label:                 coffee mug
+
+Filename= Frog_01.jpg 
+pet_image Label= frog 
+Classifier Label= tree frog, tree-frog 
+match= 1
+
+Filename= Dog_01.jpg 
+pet_image Label= dog 
+Classifier Label= english foxhound 
+match= 0
+
+Filename= Dog_02.jpg 
+pet_image Label= dog 
+Classifier Label= chihuahua 
+match= 0
+
+Filename= Coffee_mug_01.jpg 
+pet_image Label= coffee mug 
+Classifier Label= coffee mug 
+match= 1
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               english foxhound
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                      chihuahua
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+Filename= Frog_01.jpg 
+pet_image Label= frog 
+Classifier Label= tree frog, tree-frog 
+match= 1 
+Image is dog= 0 
+Classifier is dog= 0
+
+Filename= Dog_01.jpg 
+pet_image Label= dog 
+Classifier Label= english foxhound 
+match= 0 
+Image is dog= 1 
+Classifier is dog= 1
+
+Filename= Dog_02.jpg 
+pet_image Label= dog 
+Classifier Label= chihuahua 
+match= 0 
+Image is dog= 1 
+Classifier is dog= 1
+
+Filename= Coffee_mug_01.jpg 
+pet_image Label= coffee mug 
+Classifier Label= coffee mug 
+match= 1 
+Image is dog= 0 
+Classifier is dog= 0
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog  
+PetLabelDog: 0  ClassLabelDog: 0
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               english foxhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                      chihuahua  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match: 50.0
+pct_correct_dogs: 100.0
+pct_correct_notdogs: 100.0
+pct_correct_breed: 0.0
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               english foxhound
+Real:                        dog   Classifier:                      chihuahua
+
+** Total Elapsed Runtime: 0:0:3
